@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# 👨‍👩‍👧‍👦 Family Tree Application (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple yet powerful **Family Tree Management Application** built using **React**.  
+It allows you to add, edit, delete members, assign parents, visualize the tree hierarchy, view detailed relationships, and import/export full family data.
 
-## Available Scripts
+This app is designed with clean UI, gender-specific dropdown logic, and a clear readable family tree structure.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🔹 1. Add Family Members  
+You can store:
+- Name  
+- Gender  
+- Date of Birth  
+- Father (only male members shown)  
+- Mother (only female members shown)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🔹 2. Edit & Delete Members  
+Easily update records or remove members.  
+If a parent is deleted, children remain but lose the parent reference.
 
-### `npm test`
+### 🔹 3. Auto Tree Generation  
+The app automatically generates a **text-based hierarchical tree**:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Purroshottam (♂)
+└─ Vinod (♂)
+└─ Subhash (♂)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🔹 4. Member Detailed View  
+Selecting any member shows:
+- Gender + Symbol  
+- Date of Birth  
+- Parents  
+- Children  
+- Siblings  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🔹 5. Import / Export JSON  
+Quickly:
+- Copy entire family dataset  
+- Paste JSON to import a tree  
+- Download as JSON file  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🔹 6. Clean Modern UI  
+- Attractive Teal–Indigo theme  
+- Responsive layout  
+- Font Awesome icons for gender  
+- Full-width dropdowns  
+- Smooth shadows & spacing  
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **React (Hooks)**
+- **CSS3 (Custom styling)**
+- **Font Awesome Icons**
+- **LocalStorage** for permanent saved data
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📂 Folder Structure
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+src/
+├── App.jsx
+├── App.css
+├── index.js
+└── assets/ (optional)
